@@ -45,8 +45,6 @@ services:
     build: ./python/app # для нашего приложения нужны зависимости, поэтому собираем свой образ
     container_name: app
     restart: always
-    ports:
-      - 8088:80
     networks:
       - app-network
 
